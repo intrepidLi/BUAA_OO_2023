@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CheckStyle-IDEA" serialisationVersion="2">
+    <checkstyleVersion>8.16</checkstyleVersion>
+    <scanScope>JavaOnly</scanScope>
+    <suppressErrors>true</suppressErrors>
+    <copyLibs>true</copyLibs>
+    <option name="thirdPartyClasspath" />
+    <option name="activeLocationIds">
+      <option value="7e648585-be43-4a0f-9701-822fc318faf8" />
+    </option>
+    <option name="locations">
+      <list>
+        <ConfigurationLocation id="bundled-sun-checks" type="BUNDLED" scope="All" description="Sun Checks">(bundled)</ConfigurationLocation>
+        <ConfigurationLocation id="bundled-google-checks" type="BUNDLED" scope="All" description="Google Checks">(bundled)</ConfigurationLocation>
+        <ConfigurationLocation id="7e648585-be43-4a0f-9701-822fc318faf8" type="LOCAL_FILE" scope="All" description="2style">$PROJECT_DIR$/../../config.xml</ConfigurationLocation>
+        <ConfigurationLocation id="c9f5cc60-eea3-47d7-b6d5-30972839dba2" type="LOCAL_FILE" scope="All" description="aliStyle">$USER_HOME$/course_system_guidebook/config.xml</ConfigurationLocation>
+      </list>
+    </option>
+  </component>
+</project>

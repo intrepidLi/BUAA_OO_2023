@@ -1,0 +1,32 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+MainClass -> Controller: create
+MainClass -> InputThread: create
+Controller -> RequestPool: create
+Controller -> Scheduler: create
+Controller -> Elevator: create and start
+InputThread -> RequestPool: close
+InputThread -> RequestPool: addPersonRequest
+InputThread -> Controller: addMaintainRequest
+InputThread -> RequestPool: addElevatorRequest
+InputThread -> Controller: addElevator
+Controller -> Elevator: setMaintain
+InputThread -> Elevator: setEnd
+Scheduler -> RequestPool: getAllRequest
+RequestPool --> Scheduler: return all personrequests
+Scheduler -> Scheduler: isEmptyWait
+Scheduler -> Scheduler: needTurn
+Scheduler -> Scheduler: needPickUp
+Scheduler -> Scheduler: needPutDown
+
+Elevator -> Scheduler: ask for request
+Elevator <-- Scheduler: return request
+Elevator -> Elevator: open
+Elevator -> Elevator: personIn
+Elevator -> Elevator: personOut
+Elevator -> Elevator: close
+Elevator -> Elevator: move
+@enduml
